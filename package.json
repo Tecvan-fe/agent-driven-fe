@@ -1,0 +1,26 @@
+{
+  "name": "@agent-driven-fe/audit-cli",
+  "version": "0.0.1",
+  "private": true,
+  "description": "工程化健康度审查工具的最小内核:只读 CLI,扫描本地前端仓库,输出结构化与人类可读的健康度报告。",
+  "type": "module",
+  "bin": {
+    "audit-cli": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.34.1"
+}
