@@ -1,0 +1,3 @@
+# 本仓库(agent-driven-fe)是单包结构,不使用 pnpm workspace 分包。
+# 这个文件的存在把 lab 目录锁定为 pnpm 的安装根,阻止 pnpm 向上误用父目录的 workspace。
+packages: []
