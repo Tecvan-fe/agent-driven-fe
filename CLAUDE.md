@@ -31,4 +31,4 @@
 
 ## 当前状态
 
-初始化阶段。已建立本上下文(CLAUDE.md / CONTRIBUTING.md / 种子模板)。业务需求、设计资产、代码尚未产出——它们应由 AI 在后续自驱过程中,基于具体种子产出,而非预先搭好。
+第一颗种子(0001 工程化审查 CLI 最小内核)已走完完整闭环:种子定义(`seeds/0001-engineering-audit-cli-core.md`)→ 设计(`docs/design-0001-audit-cli.md`)→ 编码(`src/`)→ 三个 fixture(`fixtures/all-green` / `all-red` / `non-ts`)+ 四组测试(`tests/`)→ CI 绿,以 PR #2 合入 main。流程引擎近期环节(seed / 设计 / 编码)已被真实跑通一次;靠后环节(发布小流量等)仍为 stub。
