@@ -1,0 +1,22 @@
+{
+  "name": "@agent-driven-fe/harness",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PR 评论 → 本地 daemon → agent 改一版的闭环 harness:收到 @claude 评论后自动 checkout 分支、跑 claude -p、commit、push、回评论,且不自激死循环。零运行时依赖。",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/daemon.js",
+    "dev": "node --experimental-strip-types src/daemon.ts",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.34.1"
+}

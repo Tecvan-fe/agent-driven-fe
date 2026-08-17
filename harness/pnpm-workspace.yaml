@@ -1,0 +1,3 @@
+# harness 是独立安装根,不并入 lab 的 workspace。
+# 空 packages 列表 = 本目录自成一个安装单元,pnpm install 在此生成自己的 node_modules。
+packages: []
